@@ -3,7 +3,12 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -27,11 +32,40 @@ const Sidebar = () => (
         exact="true"
         activeclassname="active"
         className="contact-link"
-        to="/contact"
+        to="/"
       >
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
     </nav>
+    <ul>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/maqirati/?hl=en"
+        >
+          <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.facebook.com/profile.php?id=100009616672534"
+        >
+          <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/channel/UCxMwkjNVmhoSv6Nz6f-f3ig"
+        >
+          <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+        </a>
+      </li>
+    </ul>
   </div>
 )
 
