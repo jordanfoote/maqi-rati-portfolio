@@ -15,34 +15,10 @@
         margin: 0;
         font-weight: 400;
 
-        &::before {
-            content: '<h1>';
-            color: #5d0ced;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '<h1/>';
-            color: #5d0ced;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-        }
-
-        img {
-            width: 32px;
-            margin-left: 20px;
-            opacity: 0;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s
+        .name-array {
+            color: #ff10f0;
+            font-size: 100px;
+            text-shadow: 10px 0px 5px #7bfe34;
         }
     }
 
@@ -71,8 +47,8 @@
         white-space: nowrap;
 
         &:hover {
-            border: 1px solid #39ff14;
-            box-shadow: 0 0 10px 3px #39ff14;
+            border: 1px solid #7bfe34;
+            box-shadow: 0 0 10px 3px #7bfe34;
         }
     }
 }
