@@ -1,10 +1,10 @@
+import LogoS from '../../../assets/images/logo_sub.png'
 import './index.scss'
-import LogoS from '../../../asets/images/logo_sub.jpg'
 
 const Logo = () => {
   return (
     <div className="logo-container">
-      <img className="solid-logo"></img>
+      <img className="solid-logo" src={LogoS} alt="logo" />
     </div>
   )
 }
