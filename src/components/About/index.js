@@ -1,5 +1,7 @@
 import './index.scss'
+import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
+import Logo from './Logo'
 
 const About = () => {
   return (
@@ -37,7 +39,11 @@ const About = () => {
           gear you towards success, he is the one you need. MAQI RATI is... the{' '}
           <strong className="highlight">Creator</strong>.
         </p>
+        <Link to="/contact" className="flat-button">
+          CONTACT ME
+        </Link>
       </div>
+      <Logo />
     </div>
   )
 }

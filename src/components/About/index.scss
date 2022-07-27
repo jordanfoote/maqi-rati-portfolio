@@ -1,8 +1,32 @@
-.highlight {
-    color: #7bfe3d;
-    font-size: 22px;
-}
+.about-page {
 
-.quote {
-    text-indent: 50px;
+    .highlight {
+        color: #7bfe3d;
+        font-size: 22px;
+    }
+
+    .quote {
+        text-indent: 50px;
+    }
+
+    .flat-button {
+        color: #ffffff;
+        background-color: #5d0ced;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border-radius: 5em;
+        margin-top: 25px;
+        float: left;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            border: 1px solid #7bfe34;
+            box-shadow: 0 0 10px 3px #7bfe34;
+        }
+    }
 }
