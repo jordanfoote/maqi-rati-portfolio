@@ -18,8 +18,11 @@ const Sidebar = () => (
       <NavLink activeclassname="active" className="about-link" to="/about">
         <a color="#ffffff">About</a>
       </NavLink>
-      <NavLink activeclassname="active" className="contact-link" to="/artwork">
+      <NavLink activeclassname="active" className="artwork-link" to="/artwork">
         <a color="#ffffff">Artwork</a>
+      </NavLink>
+      <NavLink activeclassname="active" className="contact-link" to="/contact">
+        <a color="#ffffff">Contact</a>
       </NavLink>
     </nav>
     <Link className="logo" to="/">
