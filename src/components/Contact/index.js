@@ -1,19 +1,19 @@
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Contact = () => {
-  const refForm = useRef
+  const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_cbxiy7t',
-        refForm.current,
+        'service_djci6ph',
+        'template_520h643',
+        form.current,
         'zkHyYWkRZlhtZst_-'
       )
       .then(
@@ -42,7 +42,7 @@ const Contact = () => {
             the works, feel free to reach out via email below.
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
@@ -64,7 +64,11 @@ const Contact = () => {
                   />
                 </li>
                 <li>
-                  <textarea placeholder="Message" name="message" required />
+                  <textarea
+                    placeholder="Message"
+                    name="message"
+                    required
+                  ></textarea>
                 </li>
                 <li>
                   <input type="submit" className="flat-button" value="SEND" />
