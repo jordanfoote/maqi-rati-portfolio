@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import Logo from './Logo'
 
 const Contact = () => {
   const form = useRef()
@@ -77,6 +78,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <Logo />
       </div>
     </>
   )

@@ -1,4 +1,4 @@
-import LogoS from '../../../assets/images/logo_sub2.png'
+import LogoS from '../../../assets/images/logo_sub1.png'
 import './index.scss'
 
 const Logo = () => {

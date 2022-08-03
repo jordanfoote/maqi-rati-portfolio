@@ -9,7 +9,7 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 
-const Sidebar = () => (
+const Footer = () => (
   <div className="nav-bar">
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
@@ -60,4 +60,4 @@ const Sidebar = () => (
   </div>
 )
 
-export default Sidebar
+export default Footer
