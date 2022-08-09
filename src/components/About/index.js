@@ -29,9 +29,6 @@ const About = () => {
           <strong className="highlight">Musician</strong>, MAQI delivers his
           unique sound through a countless variety of instruments.
         </p>
-        <p className="quote">
-          <em>"Give me a f*cking tuba and I'll get you something out of it"</em>
-        </p>
         <p>
           DIY is the way. MAQI is always on the hunt for new projects to be
           involved in. Whether you need an{' '}

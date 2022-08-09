@@ -5,8 +5,10 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Work from './components/Work'
 import './App.scss'
+import images from './api-mock.json'
 
 function App() {
+  console.log('images', images)
   return (
     <>
       <Routes>
