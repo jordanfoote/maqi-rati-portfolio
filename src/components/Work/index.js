@@ -9,7 +9,7 @@ const Work = () => {
       <div className="image-section">
         <div className="card-section">
           {imageList.map((image) => (
-            <img src={image.url} alt={image.public_id}></img>
+            <img className="img" src={image.url} alt={image.public_id}></img>
           ))}
         </div>
       </div>
