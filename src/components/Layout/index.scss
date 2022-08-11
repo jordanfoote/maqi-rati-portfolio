@@ -68,3 +68,13 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .about-page,
+    .contact-page {
+        .text-zone{
+            width: auto;
+            right: 10%;
+        }
+    }
+}

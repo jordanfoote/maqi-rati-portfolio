@@ -12,5 +12,12 @@
         width: 600px;
         height: 650px;
         border-radius: 10em;
+        opacity: 0.5;
+    }
+}
+
+@media(max-width: 768px) {
+    .logo-container2 {
+        visibility: hidden;
     }
 }
