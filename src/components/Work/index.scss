@@ -14,7 +14,7 @@
 .card-section {
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .load {
@@ -32,10 +32,11 @@
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 5em;
-    margin-top: 25px;
+    margin-bottom: 50px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
+
 
     &:hover {
         border: 1px solid #7bfe34;

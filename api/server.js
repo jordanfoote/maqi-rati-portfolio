@@ -20,6 +20,8 @@ const auth = {
 app.get('/photos', async (req, res) => {
   const response = await axios.get(BASE_URL, {
     auth,
+    type: 'upload',
+    max_results: 8,
     params: {
       next_cursor: req.query.next_cursor,
     },

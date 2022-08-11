@@ -4,7 +4,7 @@ export const getImages = async (nextCursor) => {
   const params = new URLSearchParams()
 
   if (nextCursor) {
-    params.append('nex_cursor', nextCursor)
+    params.append('next_cursor', nextCursor)
   }
 
   const response = await fetch(`${API_URL}/photos?${params}`)
