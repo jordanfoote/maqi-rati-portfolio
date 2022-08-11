@@ -58,6 +58,10 @@
         box-sizing: border-box;
     }
 
+    .send-btn {
+        margin: 0;
+    }
+
     .flat-button {
         color: #ffffff;
         background-color: #5d0ced;
@@ -77,6 +81,33 @@
         &:hover {
             border: 1px solid #7bfe34;
             box-shadow: 0 0 10px 3px #7bfe34;
+        }
+    }
+}
+
+.footer2 {
+    width: 150px;
+    padding: 0;
+    margin-top: 12px;
+
+    ul {
+        width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            a{
+                font-size: 22px;
+                text-decoration: none;
+                color:#4d4d4e;
+
+                &:hover {
+                    color: #7bfe34;
+                }
+            }
         }
     }
 }

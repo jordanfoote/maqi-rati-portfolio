@@ -1,11 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass] = useState('text-animate')
   const hiArray = ['H', 'i', ',', ' ', "I'", 'm', ' ']
   const nameArray = [' ', 'M', 'A', 'Q', 'I', ' ', ' ', 'R', 'A', 'T', 'I']
   const jobArray = ['T', 'h', 'e', ' ', 'C', 'r', 'e', 'a', 't', 'o', 'r', '.']
@@ -35,6 +41,37 @@ const Home = () => {
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
+        <div className="footer">
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/maqirati/?hl=en"
+              >
+                <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/profile.php?id=100009616672534"
+              >
+                <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/UCxMwkjNVmhoSv6Nz6f-f3ig"
+              >
+                <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <Logo />
     </div>
