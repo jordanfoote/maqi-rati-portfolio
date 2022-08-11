@@ -15,3 +15,9 @@
         border-radius: 10em;
     }
 }
+
+@media(max-width: 768px) {
+    .logo-container {
+        visibility: hidden;
+    }
+}
