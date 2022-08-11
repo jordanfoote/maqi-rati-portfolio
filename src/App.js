@@ -7,7 +7,6 @@ import Work from './components/Work'
 import './App.scss'
 
 function App() {
-  console.log('images', images)
   return (
     <>
       <Routes>
